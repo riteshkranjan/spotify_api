@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <form method="POST" action="/">
+        <input type="text" name="artist">
+    </form>
+
+    {% if albums %}
+        {% for album in albums %}
+            {{album}}
+            <br />
+        {% endfor %}
+    {% endif %}
+
+    {% if msg %}
+        <p style="color:red;">{{msg}}</p>
+    {% endif %}
+
+</body>
+
+</html>
